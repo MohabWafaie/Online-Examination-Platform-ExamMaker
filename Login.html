@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/cssReset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail" />
+    <link rel="stylesheet" href="css/login-register-style.css">
+</head>
+<body>
+    <main class="page-main">
+        <form class="auth-form" action="" id="login-form">
+            <h1>Welcome back</h1>
+            <p>Log in to your ExamMaker account</p>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <div class="input-group">
+                    <img src="images/mail.svg" alt="mail">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-group">
+                    <img src="images/lock.svg" alt="lock">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" >
+                    <button type="button" class="toggle-password" onclick="togglePassword(this)">
+                        <img src="images/visibility_on.svg" alt="show password" >
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Log in</button>
+            <p class="auth-link">Don't have an account? <a href="register.html"> Sign up</a></p>
+        </form>
+
+        <aside class="auth-aside">
+            <div class="aside-content">
+                <img src="images/loginPic.png" alt="Illustration" class="aside-image aside-login-image ">
+                <h1>Welcome Back!</h1>
+                <p>Log in to access your exams.</p>
+            </div>
+            <div class="aside-svg">
+                <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,500 C150,400 350,600 500,500 C650,400 850,600 1000,500 L1000,1000 L0,1000 Z" fill="#60a5fa"></path>
+                    <path d="M0,600 C150,500 350,700 500,600 C650,500 850,700 1000,600 L1000,1000 L0,1000 Z" fill="#93c5fd"></path>
+                </svg>
+            </div>
+        </aside>
+        
+    </main>
+
+
+    
+    <script src="JS/login-register-script.js"></script>
+</body>
+</html>

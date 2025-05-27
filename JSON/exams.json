@@ -1,0 +1,233 @@
+{
+    "exams": [
+      {
+        "title": "Mathematics",
+        "time": 5,
+        "image": "https://storage.googleapis.com/uxpilot-auth.appspot.com/7db611aaa2-3f2ff70c8c976c83a62f.png",
+        "questions": [
+        {
+          "question": "What is 5 + 7?",
+          "choices": ["10", "11", "12", "13"],
+          "correct_answer": "12"
+        },
+        {
+          "question": "What is 9 x 6?",
+          "choices": ["54", "56", "64", "46"],
+          "correct_answer": "54"
+        },
+        {
+          "question": "What is the square of 5?",
+          "choices": ["10", "20", "25", "30"],
+          "correct_answer": "25"
+        },
+        {
+          "question": "What is 100 divided by 4?",
+          "choices": ["20", "25", "30", "40"],
+          "correct_answer": "25"
+        },
+        {
+          "question": "What is 15% of 200?",
+          "choices": ["20", "25", "30", "35"],
+          "correct_answer": "30"
+        },
+        {
+          "question": "What is the value of π (approximately)?",
+          "choices": ["2.14", "3.14", "4.14", "5.14"],
+          "correct_answer": "3.14"
+        },
+        {
+          "question": "What is 8 squared?",
+          "choices": ["64", "72", "81", "88"],
+          "correct_answer": "64"
+        },
+        {
+          "question": "What is 3/4 as a decimal?",
+          "choices": ["0.25", "0.50", "0.75", "1.25"],
+          "correct_answer": "0.75"
+        },
+        {
+          "question": "What is the perimeter of a square with side 6cm?",
+          "choices": ["18cm", "20cm", "24cm", "30cm"],
+          "correct_answer": "24cm"
+        },
+        {
+          "question": "What is the area of a rectangle 4cm wide and 5cm long?",
+          "choices": ["9cm²", "20cm²", "25cm²", "30cm²"],
+          "correct_answer": "20cm²"
+        }
+      ]
+      },
+      {
+        "title": "Physics",
+        "time": 5,
+        "image": "https://storage.googleapis.com/uxpilot-auth.appspot.com/eb73fd7599-8dd90edc377a550615c3.png",
+        "questions": [
+        {
+          "question": "What is the force that pulls objects toward the Earth?",
+          "choices": ["Magnetism", "Gravity", "Friction", "Electricity"],
+          "correct_answer": "Gravity"
+        },
+        {
+          "question": "What is used to measure temperature?",
+          "choices": ["Scale", "Thermometer", "Barometer", "Caliper"],
+          "correct_answer": "Thermometer"
+        },
+        {
+          "question": "Which form of energy is produced by a moving object?",
+          "choices": ["Heat energy", "Light energy", "Kinetic energy", "Potential energy"],
+          "correct_answer": "Kinetic energy"
+        },
+        {
+          "question": "Sound travels fastest through which medium?",
+          "choices": ["Air", "Water", "Glass", "Steel"],
+          "correct_answer": "Steel"
+        },
+        {
+          "question": "What is the unit of electric current?",
+          "choices": ["Volt", "Ampere", "Watt", "Ohm"],
+          "correct_answer": "Ampere"
+        },
+        {
+          "question": "What causes day and night on Earth?",
+          "choices": ["Revolution of Earth", "Earth's tilt", "Rotation of Earth", "Sun's rotation"],
+          "correct_answer": "Rotation of Earth"
+        },
+        {
+          "question": "What tool is used to measure force?",
+          "choices": ["Thermometer", "Spring balance", "Barometer", "Ruler"],
+          "correct_answer": "Spring balance"
+        },
+        {
+          "question": "Which one is a non-renewable source of energy?",
+          "choices": ["Wind", "Sunlight", "Coal", "Water"],
+          "correct_answer": "Coal"
+        },
+        {
+          "question": "What kind of energy does a battery provide?",
+          "choices": ["Mechanical energy", "Electrical energy", "Nuclear energy", "Sound energy"],
+          "correct_answer": "Electrical energy"
+        },
+        {
+          "question": "What is the process of turning a solid directly into gas called?",
+          "choices": ["Melting", "Evaporation", "Condensation", "Sublimation"],
+          "correct_answer": "Sublimation"
+        }
+      ]
+      },
+      {
+        "title": "Chemistry",
+        "time": 5,
+        "image": "https://storage.googleapis.com/uxpilot-auth.appspot.com/274a2b161e-671decdc3197b0a9bdcd.png",
+        "questions": [
+          {
+            "question": "What is H2O commonly known as?",
+            "choices": ["Oxygen", "Hydrogen", "Salt", "Water"],
+            "correct_answer": "Water"
+          },
+          {
+            "question": "Which gas do humans need to breathe?",
+            "choices": ["Carbon Dioxide", "Oxygen", "Hydrogen", "Nitrogen"],
+            "correct_answer": "Oxygen"
+          },
+          {
+            "question": "What is the chemical symbol for gold?",
+            "choices": ["Ag", "Gd", "Au", "Go"],
+            "correct_answer": "Au"
+          },
+          {
+            "question": "Which of the following is a liquid at room temperature?",
+            "choices": ["Iron", "Mercury", "Copper", "Silver"],
+            "correct_answer": "Mercury"
+          },
+          {
+            "question": "Which substance turns blue litmus paper red?",
+            "choices": ["Base", "Salt", "Water", "Acid"],
+            "correct_answer": "Acid"
+          },
+          {
+            "question": "What are atoms made of?",
+            "choices": ["Cells", "Molecules", "Protons, neutrons, and electrons", "Ions"],
+            "correct_answer": "Protons, neutrons, and electrons"
+          },
+          {
+            "question": "What is the main gas found in the air we breathe?",
+            "choices": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+            "correct_answer": "Nitrogen"
+          },
+          {
+            "question": "Which state of matter has a definite shape and volume?",
+            "choices": ["Gas", "Liquid", "Solid", "Plasma"],
+            "correct_answer": "Solid"
+          },
+          {
+            "question": "What do you call a substance made from two or more elements?",
+            "choices": ["Atom", "Element", "Compound", "Molecule"],
+            "correct_answer": "Compound"
+          },
+          {
+            "question": "Which tool is commonly used to heat substances in a lab?",
+            "choices": ["Bunsen burner", "Thermometer", "Beaker", "Graduated cylinder"],
+            "correct_answer": "Bunsen burner"
+          }
+        ]
+      },
+      {
+        "title": "Biology",
+        "time": 5,
+        "image": "https://storage.googleapis.com/uxpilot-auth.appspot.com/5f627b0312-4525cbab2a480439c528.png",
+        "questions": [
+          {
+            "question": "What part of the plant makes food?",
+            "choices": ["Root", "Stem", "Leaf", "Flower"],
+            "correct_answer": "Leaf"
+          },
+          {
+            "question": "What do we call animals that eat only plants?",
+            "choices": ["Carnivores", "Herbivores", "Omnivores", "Scavengers"],
+            "correct_answer": "Herbivores"
+          },
+          {
+            "question": "Which organ pumps blood throughout the body?",
+            "choices": ["Lungs", "Brain", "Heart", "Liver"],
+            "correct_answer": "Heart"
+          },
+          {
+            "question": "Which part of the body controls all activities?",
+            "choices": ["Heart", "Brain", "Stomach", "Lungs"],
+            "correct_answer": "Brain"
+          },
+          {
+            "question": "What gas do humans breathe in to stay alive?",
+            "choices": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+            "correct_answer": "Oxygen"
+          },
+          {
+            "question": "What is the basic unit of life?",
+            "choices": ["Tissue", "Organ", "Cell", "Organism"],
+            "correct_answer": "Cell"
+          },
+          {
+            "question": "Which system in the body helps in breathing?",
+            "choices": ["Digestive system", "Respiratory system", "Nervous system", "Circulatory system"],
+            "correct_answer": "Respiratory system"
+          },
+          {
+            "question": "What do you call the process by which plants make their own food?",
+            "choices": ["Digestion", "Respiration", "Photosynthesis", "Transpiration"],
+            "correct_answer": "Photosynthesis"
+          },
+          {
+            "question": "Which sense organ helps us see?",
+            "choices": ["Nose", "Eyes", "Ears", "Skin"],
+            "correct_answer": "Eyes"
+          },
+          {
+            "question": "Which body system includes bones and gives structure to the body?",
+            "choices": ["Digestive system", "Muscular system", "Skeletal system", "Nervous system"],
+            "correct_answer": "Skeletal system"
+          }
+        ]
+      }
+    ]
+  }
+  

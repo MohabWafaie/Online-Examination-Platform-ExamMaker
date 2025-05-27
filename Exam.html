@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ُExam</title>
+    <link rel="stylesheet" href="css/examCard.css">
+    <link rel="stylesheet" href="css/Exam-nav.css">
+    <link rel="stylesheet" href="css/scorecard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> 
+</head>
+
+<body>
+    <div class ="examPage">
+    <nav class="exam-nav">
+
+            <h2 id="subjectName"></h2>
+    
+            <p>
+                <svg class="svg-inline--fa fa-clock" aria-hidden="true" focusable="false" data-prefix="far"
+                    data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z">
+                    </path>
+                </svg>
+                <span id="navTimer">
+                    
+                </span>
+                    
+            </p>
+    
+     
+    </nav>
+    <div class="progress-bar">
+        <div class="progress-fill" id="navProgressBar"></div>
+    </div>
+    <div class="page">
+        <div class="container">
+            <div class="cardCont">
+                <div class="card">
+                    <div class="cardContent">
+                        <div class="cardHead">
+                            <p id="question-progress">Question 15 of 50</p>
+                            <button class="flag">
+                                <i data-fa-i2svg=""><svg class="svg-inline--fa fa-flag" aria-hidden="true"
+                                        focusable="false" data-prefix="far" data-icon="flag" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M48 24C48 10.7 37.3 0 24 0S0 10.7 0 24V64 350.5 400v88c0 13.3 10.7 24 24 24s24-10.7 24-24V388l80.3-20.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66.1c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L48 52V24zm0 77.5l96.6-24.2c27-6.7 55.5-3.6 80.4 8.8c54.9 27.4 118.7 29.7 175 6.8V334.7l-24.4 9.1c-33.7 12.6-71.2 10.7-103.4-5.4c-48.2-24.1-103.3-30.1-155.6-17.1L48 338.5v-237z">
+                                        </path>
+                                    </svg></i>
+                                Flag Question</button>
+                        </div>
+                        <div id="question-container"></div>
+                        <div class="navigation">
+                            <button class="prev" id="prev-btn">
+                                <svg class="svg-inline--fa fa-arrow-left" aria-hidden="true" focusable="false"
+                                    data-prefix="fas" data-icon="arrow-left" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z">
+                                    </path>
+                                </svg>
+                                Previous</button>
+                            <button class="clear" id="clear-btn">Clear Selection</button>
+                            <button class="next" id="next-btn">Next
+                                <svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false"
+                                    data-prefix="fas" data-icon="arrow-right" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="submit" id="submit-answer" onclick="SubmitButtonAlert()">Submit Exam</button>
+            </div>
+            <div class="flags">
+                <div class="card">
+                    <div class="cardContent">
+                        <div class="flagHead">
+                            <h3>Flagged Questions</h3>
+                            <p>2 Questions</p>
+                        </div>
+                        <div id="flagged-questions-container"></div>
+                        <div class="review">
+                            <svg class="svg-inline--fa fa-lightbulb" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z">
+                                </path>
+                            </svg>
+                            <p>Review flagged questions before submitting your exam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="JS/examCard.js"></script>
+        </div>
+    </div>
+</div>
+
+
+  
+    <section class="score-section">
+      <h2 class="title">Instant Results &amp; Analysis</h2>
+    
+      <div class="score-card">
+        <div class="chart">
+          <div class="circle-container">
+            <div class="circle-inner">
+              <span>80%</span>
+              <span>Score</span>
+            </div>
+          </div>
+          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7d3fca8714-5ae28a27dd55f78df4f9.png" alt="Trophy">
+          <h3>Great job!</h3>
+          <p>You've passed the exam</p>
+        </div>
+    
+        <div class="breakdown">
+          <h3>Performance Breakdown</h3>
+    
+          <div class="progress-group">
+            <span><span>Correct Answers</span><span>16/20</span></span>
+            <div class="progress-bar"><div class="progress-fill fill-score"></div></div>
+          </div>
+    
+          <div class="progress-group">
+            <span><span>Time Taken</span><span>24:15 min</span></span>
+            <div class="progress-bar"><div class="progress-fill fill-time"></div></div>
+          </div>
+    
+          <div class="progress-group">
+            <span><span>Ranking</span><span>Top 15%</span></span>
+            <div class="progress-bar"><div class="progress-fill fill-rank"></div></div>
+          </div>
+    
+          <div class="buttons">
+            <button class="btn-primary" onclick="window.location.href='results.html'">View Detailed Results</button>
+            <button class="btn-outline" onclick="window.location.href='index.html'">Back to Home</button>
+          </div>
+    
+          <div class="share">
+            <p>Share your results:</p>
+            <div class="share-icons">
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-facebook-f"></i></span>
+              <span><i class="fab fa-linkedin-in"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <script src="JS/exam.js"></script>
+</body>
+
+</html>

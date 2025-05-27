@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Detailed Results</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f9f9f9; }
+    .question-box { background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .correct { color: green; }
+    .wrong { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Detailed Results</h1>
+  <div id="results"></div>
+
+  <script>
+    const stored = localStorage.getItem("examResults");
+    const results = stored ? JSON.parse(stored) : null;
+    const container = document.getElementById("results");
+
+    if (results && results.questions) {
+      results.questions.forEach((q, i) => {
+        const userAns = results.userAnswers[i] ?? "No Answer";
+        const correct = results.correctAnswers[i];
+        const isCorrect = userAns === correct;
+
+        const box = document.createElement("div");
+        box.className = "question-box";
+        box.innerHTML = `
+          <h3>Q${i + 1}: ${q.question}</h3>
+          <p><strong>Your Answer:</strong> <span class="${isCorrect ? 'correct' : 'wrong'}">${userAns}</span></p>
+          <p><strong>Correct Answer:</strong> <span class="correct">${correct}</span></p>
+        `;
+        container.appendChild(box);
+      });
+    } else {
+      container.innerHTML = "<p>No results found.</p>";
+    }
+  </script>
+</body>
+</html>

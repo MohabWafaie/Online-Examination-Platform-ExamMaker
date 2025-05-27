@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/cssReset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail" />
+    <link rel="stylesheet" href="css/login-register-style.css">
+</head>
+
+<body>
+    <main class="page-main register-page-main">
+        <aside class="auth-aside">
+            <div class="aside-content">
+                <div class="aside-title">JOIN US IT'S FREE!</div>
+                <img src="images/registerPic.png" alt="Illustration" class="aside-image">
+                <div class="floating-element graduation-cap">
+                    <i class="fas fa-graduation-cap" data-fa-i2svg=""><svg class="svg-inline--fa fa-graduation-cap"
+                            aria-hidden="true" focusable="false" data-prefix="fas" data-icon="graduation-cap" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z">
+                            </path>
+                        </svg></i>
+                </div>
+                <div class="floating-element check-square">
+                    <i class="fas fa-square-check" data-fa-i2svg=""><svg class="svg-inline--fa fa-square-check"
+                            aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square-check" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                            </path>
+                        </svg></i>
+                </div>
+                <div class="floating-element pencil">
+                    <i class="fas fa-pencil" data-fa-i2svg=""><svg class="svg-inline--fa fa-pencil" aria-hidden="true"
+                            focusable="false" data-prefix="fas" data-icon="pencil" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z">
+                            </path>
+                        </svg></i>
+                </div>
+                <div class="floating-element lightbulb">
+                    <i class="fas fa-lightbulb" data-fa-i2svg=""><svg class="svg-inline--fa fa-lightbulb"
+                            aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z">
+                            </path>
+                        </svg></i>
+                </div>
+            </div>
+        </aside>
+
+        <form class="auth-form" action="" id="register-form">
+            <h1>Join ExamMaker</h1>
+            <p>Create your account and start learning</p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <div class="input-group">
+                        <img src="images/person.svg" alt="person">
+                        <input type="text" id="first-name" name="firstName" placeholder="First name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <div class="input-group">
+                        <img src="images/person.svg" alt="person">
+                        <input type="text" id="last-name" name="lastName" placeholder="Last name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <div class="input-group">
+                    <img src="images/mail.svg" alt="mail">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-group">
+                    <img src="images/lock.svg" alt="lock">
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <button type="button" class="toggle-password" onclick="togglePassword(this)">
+                        <img src="images/visibility_on.svg" alt="show password" >
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="repassword">Re-enter password</label>
+                <div class="input-group">
+                    <img src="images/lock.svg" alt="lock">
+                    <input type="password" id="repassword" name="repassword" placeholder="Enter your password">
+                    <button type="button" class="toggle-password" onclick="togglePassword(this)">
+                        <img src="images/visibility_on.svg" alt="show password" >
+                    </button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Create Account</button>
+            <p class="auth-link">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </main>
+    <script src="JS/login-register-script.js"></script>
+</body>
+
+</html>

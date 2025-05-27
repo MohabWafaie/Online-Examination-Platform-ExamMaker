@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(249, 250, 251);
+    font-weight: 500;
+}
+.container{
+    padding-top: 2rem;
+    width: 78%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.cardCont{
+    width: 65%;
+}
+.card{
+    width: 100%;
+    background-color: white;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.cardContent{
+    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.cardHead{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(107, 114, 128)
+}
+.flag{
+    background-color: white;
+    border: none;
+    svg{
+        width: 1.2rem;
+        height: 1rem;
+    }
+    font-size: 1.2rem;
+    color: rgb(75, 85, 99);
+    cursor: pointer;
+    &:hover{
+        color: rgb(245, 158, 11);
+    }
+}
+.question{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    label{
+        display: flex;
+        padding: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin: 1rem 0;
+        text-indent: 0.5rem;
+        border-width: 1px;
+        border-radius: 0.5rem;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid #e5e7eb;
+        &:hover{
+            background-color: rgb(249, 250, 251);
+        }
+    }
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    button{
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        svg{
+            width: 1.2rem;
+            height: 1rem;
+            padding: 0.2rem;
+        }
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+.prev{
+    border-radius: 0.5rem;
+    background-color: white;
+    border-spacing: 5rem;
+    border: 1px solid #e5e7eb;
+    &:hover{
+        background-color: rgb(249, 250, 251);
+    }
+}
+.clear{
+    background-color: white;
+    border: none;
+    color: rgb(75, 85, 99);
+    &:hover{
+        color: black;
+    }
+}
+.next{
+    background-color: rgb(37, 99, 235);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    &:hover{
+        background-color: rgb(29, 78, 216);
+        color: white;
+    }
+}
+.submit{
+    width: 100%;
+    background-color: rgb(5, 150, 105);
+    font-weight: 700;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(4, 120, 87);
+    }
+    margin-bottom: 3rem;
+}
+.flags{
+    width: 32%;
+}
+.flagHead{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+    h3{
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        margin: 0;
+    }
+    p{
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: rgb(146, 64, 14);
+        background-color: rgb(254, 243, 199);
+        border-radius: 9999px;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin: 0;
+    }
+}
+.flaggedQuest{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: rgb(249, 250, 251);
+    margin-bottom: 1rem;
+    p{
+        display: flex;
+        align-items: center;
+    }
+    svg{
+        width: 1.2rem;
+        height: 1rem;
+        padding: 0.2rem;
+        color: rgb(245, 158, 11);
+    }
+    .flagArrow{
+        color: black;
+        margin-left: auto;
+        margin-right: 0.5rem;
+        opacity: 0;
+    }
+    &:hover{
+        background-color: rgb(255, 251, 235);
+        .flagArrow{
+            opacity: 1;
+        }
+    }
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 251, 235);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: rgb(180, 83, 9);
+    svg{
+        width: 2rem;
+        height: 2rem;
+        padding: 1rem;
+        color: rgb(217, 119, 6);
+    }
+}
