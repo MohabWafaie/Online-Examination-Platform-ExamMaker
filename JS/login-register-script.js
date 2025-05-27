@@ -103,7 +103,7 @@ form.onsubmit = function (e) {
 
     if (formId === "register-form") {
         saveRegisterData(e);
-        window.location.replace("Login.html");
+        window.location.replace("login.html");
     } else if (formId === "login-form") {
         checkLoginData(e);
     }
